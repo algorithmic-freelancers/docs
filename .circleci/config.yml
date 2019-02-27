@@ -29,6 +29,6 @@ workflows:
   build_and_deploy:
     jobs:
       - deploy-website:
-         filters:
+        filters:
           branches:
             only: develop
