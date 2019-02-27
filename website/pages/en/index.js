@@ -60,7 +60,7 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        <Logo img_src={`${baseUrl}img/colossus.svg`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
@@ -102,13 +102,13 @@ class Index extends React.Component {
     );
 
     const TryOut = () => (
-      <Block id="try">
+      <Block id="theorycrafting">
         {[
           {
-            content: 'Talk about trying this out',
-            image: `${baseUrl}img/docusaurus.svg`,
+            content: 'Say something about theory-crafting',
+            image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'left',
-            title: 'Try it Out',
+            title: 'Theorycrafting',
           },
         ]}
       </Block>
@@ -119,10 +119,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/docusaurus.svg`,
+              'Insert recruiting pitch here',
+            image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Experiments',
           },
         ]}
       </Block>
@@ -132,10 +132,10 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Talk about learning how to use this',
-            image: `${baseUrl}img/docusaurus.svg`,
+            content: 'Say something about mechanics',
+            image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'right',
-            title: 'Learn How',
+            title: 'Mechanics',
           },
         ]}
       </Block>
@@ -145,16 +145,16 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            content: 'Anthem, reverse-engineered',
+            image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Mechanics',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            content: 'Optimize to your heart\'s content',
+            image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Theorycrafting',
           },
         ]}
       </Block>
@@ -194,7 +194,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
+          {/* <FeatureCallout /> */}
           <LearnHow />
           <TryOut />
           <Description />
