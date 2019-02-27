@@ -24,7 +24,7 @@ const siteConfig = {
   title: 'The Algorithmic Freelancers', // Title for your website.
   tagline: 'Understanding the mechanics of Anthem',
   url: 'http://algorithmic-freelancers.github.io', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  baseUrl: '/docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
