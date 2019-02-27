@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'The Algorithmic Freelancers', // Title for your website.
-  tagline: 'Understanding the mechanics of Anthem',
+  tagline: 'Deciphering the mechanics of Anthem',
   url: 'http://algorithmic-freelancers.github.io', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -41,7 +41,7 @@ const siteConfig = {
     {doc: 'mechanics/overview', label: 'Docs'},
     {doc: 'todo', label: 'Contributing'},
     {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {blog: true, label: 'Experiments'},
   ],
 
   // If you have users set above, you add it here:

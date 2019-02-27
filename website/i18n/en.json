@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Understanding the mechanics of Anthem",
+    "tagline": "Deciphering the mechanics of Anthem",
     "docs": {
       "colossus/colossus": {
         "title": "Colossus Mechanics",
@@ -42,7 +42,7 @@
       "Docs": "Docs",
       "Contributing": "Contributing",
       "Help": "Help",
-      "Blog": "Blog"
+      "Experiments": "Experiments"
     },
     "categories": {
       "Mechanics": "Mechanics",

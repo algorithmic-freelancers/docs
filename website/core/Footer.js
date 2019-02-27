@@ -52,7 +52,7 @@ class Footer extends React.Component {
             <a href={this.pageUrl('users.html', this.props.language)}>
               Featured Projects
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
+            <a href="https://discord.gg/RZtb6rt">Project Chat</a>
           </div>
           <div>
             <h5>More</h5>
