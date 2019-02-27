@@ -14,3 +14,7 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+.homeSplashFade {
+    background-image: url('/img/Anthem_Texture_Topo_Grey.png');
+}
