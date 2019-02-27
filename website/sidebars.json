@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Mechanics": ["mechanics/overview", "mechanics/damageTypes"],
+    "Mechanics": ["mechanics/overview", "mechanics/damageFormula", "mechanics/damageTypes"],
     "Storm": ["storm/storm"],
     "Colossus": ["colossus/colossus"],
     "Interceptor": ["interceptor/interceptor"],
