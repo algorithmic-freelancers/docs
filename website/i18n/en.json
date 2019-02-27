@@ -5,33 +5,47 @@
     "previous": "Previous",
     "tagline": "Understanding the mechanics of Anthem",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "colossus/colossus": {
+        "title": "Colossus Mechanics",
+        "sidebar_label": "Colossus"
       },
-      "doc2": {
-        "title": "document number 2"
+      "interceptor/interceptor": {
+        "title": "Interceptor Mechanics",
+        "sidebar_label": "Interceptor"
       },
-      "doc3": {
-        "title": "This is document number 3"
+      "mechanics/damageTypes": {
+        "title": "Damage Types",
+        "sidebar_label": "Damage Types"
       },
-      "doc4": {
-        "title": "Other Document"
+      "mechanics/overview": {
+        "title": "Mechanics Overview",
+        "sidebar_label": "Overview"
       },
-      "doc5": {
-        "title": "Fifth Document"
+      "ranger/ranger": {
+        "title": "Ranger Mechanics",
+        "sidebar_label": "Ranger"
+      },
+      "storm/storm": {
+        "title": "Storm Mechanics",
+        "sidebar_label": "Storm"
+      },
+      "todo": {
+        "title": "Coming Soon",
+        "sidebar_label": "To-do"
       }
     },
     "links": {
       "Docs": "Docs",
-      "API": "API",
+      "Contributing": "Contributing",
       "Help": "Help",
       "Blog": "Blog"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Mechanics": "Mechanics",
+      "Storm": "Storm",
+      "Colossus": "Colossus",
+      "Interceptor": "Interceptor",
+      "Ranger": "Ranger"
     }
   },
   "pages-strings": {
