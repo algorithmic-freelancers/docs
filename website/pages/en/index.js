@@ -13,6 +13,8 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+const discordUrl = 'https://discord.gg/RZtb6rt';
+
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig, language = ''} = this.props;
@@ -20,6 +22,9 @@ class HomeSplash extends React.Component {
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    
+    const docsRoot = `${baseUrl}${docsPart}`;
+    const blogRoot = `${baseUrl}blog`;
 
     const SplashContainer = props => (
       <div className="homeContainer">
@@ -64,9 +69,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#theorycrafting">Join Us</Button>
-            <Button href={docUrl('mechanics/overview.html')}>Example Link</Button>
-            <Button href={docUrl('todo.html')}>Example Link 2</Button>
+            <Button href={docUrl('mechanics/overview.html')}>Guide</Button>
+            <Button href={blogRoot}>Experiments</Button>
+            <Button href={discordUrl}>Join Us</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -77,7 +82,14 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const {baseUrl, docsUrl} = siteConfig;
+
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+    const langPart = `${language ? `${language}/` : ''}`;
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const docsRoot = `${baseUrl}${docsPart}`;
+    const blogRoot = `${baseUrl}blog`;
+
 
     const Block = props => (
       <Container
@@ -102,12 +114,13 @@ class Index extends React.Component {
     );
 
     const TryOut = () => (
-      <Block id="theorycrafting" background="dark">
+      <Block id="theorycrafting" background="light">
         {[
           {
             content: 'Join the conversation around how the world of Bastion works, and how best to equip your Javelin to survive.',
             image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'right',
+            imageLink: discordUrl,
             title: 'Theorycrafting',
           },
         ]}
@@ -122,6 +135,7 @@ class Index extends React.Component {
               `We don't just tell you the numbers; you can see how we got them.  Check out how other Freelancers are studying the world around them, or publish your own findings.`,
             image: `${baseUrl}img/flask.svg`,
             imageAlign: 'left',
+            imageLink: blogRoot,
             title: 'Experiments',
           },
         ]}
@@ -135,6 +149,7 @@ class Index extends React.Component {
             content: `In Bastion, knowledge is the best weapon. Arm yourself with damage formula, inscription mechanics, type multipliers, and more.`,
             image: `${baseUrl}img/book.svg`,
             imageAlign: 'right',
+            imageLink: docUrl('mechanics/overview.html'),
             title: 'Mechanics Guide',
           },
         ]}
@@ -193,7 +208,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
+          {/* <Features /> */}
           {/* <FeatureCallout /> */}
           <Guide />
           <Experiments />
