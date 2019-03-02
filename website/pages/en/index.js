@@ -107,7 +107,7 @@ class Index extends React.Component {
           {
             content: 'Join the conversation around how the world of Bastion works, and how best to equip your Javelin to survive.',
             image: `${baseUrl}img/colossus.svg`,
-            imageAlign: 'left',
+            imageAlign: 'right',
             title: 'Theorycrafting',
           },
         ]}
@@ -121,7 +121,7 @@ class Index extends React.Component {
             content:
               `We don't just tell you the numbers; you can see how we got them.  Check out how other Freelancers are studying the world around them, or publish your own findings.`,
             image: `${baseUrl}img/flask.svg`,
-            imageAlign: 'right',
+            imageAlign: 'left',
             title: 'Experiments',
           },
         ]}
