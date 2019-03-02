@@ -22,6 +22,12 @@ h2.headerTitleWithLogo {
 h2.projectTitle {
     color: whitesmoke;
 }
+body a {
+    color: #ef553d;
+}
+body a:hover {
+    color: #ed5066;
+}
 
 .homeSplashFade .button {
     color: #ef553d;
