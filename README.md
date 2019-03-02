@@ -10,13 +10,29 @@ This website was created with [Docusaurus](https://docusaurus.io/).
 
 # Get Started in 5 Minutes
 
-1. Make sure all the dependencies for the website are installed:
+## Set up your local dev environment
+
+[Install Node.js](http://nodejs.org/)
+
+[Install a Git GUI](https://desktop.github.com/)
+
+[Install a markdown editor](https://code.visualstudio.com/)
+
+Using your git gui, clone this repository to your computer.  When prompted for a repository location, use: 
+
+https://github.com/algorithmic-freelancers/docs.git
+
+## Make sure all the dependencies for the website are installed
+
+Navigate to the /website folder in the repository.
 
 ```sh
 # Install dependencies
-$ yarn
+$ npm install
 ```
-2. Run your dev server:
+## Run your dev server:
+
+Navigate to the /website folder
 
 ```sh
 # Start the site
@@ -28,8 +44,8 @@ $ yarn start
 Your project file structure should look something like this
 
 ```
-my-docusaurus/
-  docs/
+docs/
+  guide/
     doc-1.md
     doc-2.md
     doc-3.md
@@ -52,9 +68,9 @@ my-docusaurus/
 
 ## Editing an existing docs page
 
-Edit docs by navigating to `docs/` and editing the corresponding document:
+Edit docs by navigating to `guide/` and editing the corresponding document:
 
-`docs/doc-to-be-edited.md`
+`guide/doc-to-be-edited.md`
 
 ```markdown
 ---
@@ -67,7 +83,7 @@ Edit me...
 
 For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
 
-## Editing an existing blog post
+## Editing an existing blog/experiment post
 
 Edit blog posts by navigating to `website/blog` and editing the corresponding post:
 
@@ -87,7 +103,7 @@ For more information about blog posts, click [here](https://docusaurus.io/docs/e
 
 ## Adding a new docs page to an existing sidebar
 
-1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
+1. Create the doc as a new markdown file in `/guide`, example `guide/newly-created-doc.md`:
 
 ```md
 ---
