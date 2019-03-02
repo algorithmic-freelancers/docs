@@ -7,14 +7,14 @@
     "docs": {
       "colossus/colossus": {
         "title": "Colossus Mechanics",
-        "sidebar_label": "Colossus"
+        "sidebar_label": "Coming Soon"
       },
       "interceptor/interceptor": {
         "title": "Interceptor Mechanics",
-        "sidebar_label": "Interceptor"
+        "sidebar_label": "Coming Soon"
       },
       "mechanics/damageFormula": {
-        "title": "Anthem Damage Formula",
+        "title": "Anthem's Damage Formula",
         "sidebar_label": "Damage Formula"
       },
       "mechanics/damageTypes": {
@@ -27,11 +27,11 @@
       },
       "ranger/ranger": {
         "title": "Ranger Mechanics",
-        "sidebar_label": "Ranger"
+        "sidebar_label": "Coming Soon"
       },
       "storm/storm": {
         "title": "Storm Mechanics",
-        "sidebar_label": "Storm"
+        "sidebar_label": "Coming Soon"
       },
       "todo": {
         "title": "Coming Soon",
