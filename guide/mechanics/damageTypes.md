@@ -4,14 +4,27 @@ title: Damage Types
 sidebar_label: Damage Types
 ---
 
-Content will be coming soon!
+Each damage source has up to four types, consisting of the Major damage type (Physical or Elemental), the Damage Subtype, the Major Item type, the Item subtype.  Specific bonus types may also apply.  Any inscriptions or effects which affect one of the damage source's types will apply to it. 
 
-## Example Section
+The total damage multiplier for the damage source can then be found by adding all of the bonuses which affect it.  In this way, each of the damage source's types can be thought of as a "modifier slot":  When determining how damage multipliers will apply, just determine the modifiers for each slot, and add them together.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+## Slots 1 and 2:  Major Damage Type and Damage Subtype
 
-## Some Formula
+The Major damage types are Physical and Elemental.  Impact and Acid are Physical damage, and Electric, Fire, and Ice are Elemental damage.
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+The Damage Subtypes are Impact, Acid, Electric, Fire, and Ice.  Bonuses to these apply in addition to the general elemental/physical bonus, as they are in separate "type slots"
+
+
+## Slots 3 and 4:  Major Item Type and Damage Subtype
+
+The Major item Types are Weapons and Gear.
+
+The Item Subtypes for Gear are [Q/LB] and [E/RB].  Item Subtypes for weapons are quite simply the weapon category:  Assault Rifle, Marksman Rifle, Autocannon, etc.
+
+Damage which does not come from an item will not have a Major Item type or Item Subtype, but will usually have an associated bonus type which affects it.
+
+## Bonus Slots
+
+Some damage modifiers mentioned in the Forge are not included above.  This is because they are extra bonuses which apply in addition to the damage types in the above slots.
+
+These extra bonuses are Ultimate, Melee, Combo, Blast, and Item Level Scaling.
