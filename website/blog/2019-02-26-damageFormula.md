@@ -11,7 +11,7 @@ This document is based on work done by a number of The Algorithmic Freelancers i
 
 Let’s jump right into it. Here is the formula:
 
-```DAMAGE = (((Base * (1+A))*(B*(1+C))*D*E+1```
+```DAMAGE = ((Base * (1+A))*(B*(1+C))*D*E)+1```
 
 
 ### Parameters used
@@ -68,7 +68,7 @@ Our values for the formula are as follows:
 
 Plugging it in:
 ```
-DAMAGE = 238 * (1.18) * (0.5 * 1) * 0.75 * 1.33 + 1
+DAMAGE = 238 * (1.68) * (0.5 + 1) * 0.75 * 1.33 + 1
 DAMAGE = 599
 ```
 
