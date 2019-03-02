@@ -4,14 +4,18 @@ title: Mechanics Overview
 sidebar_label: Overview
 ---
 
-Content will be coming soon!
+Anthem has a number of mechanics which are not directly revealed by the game.  These include everything from damage types, to inscription effects and modifiers.  Knowledge of these mechanics can mean the difference between survival and death in the savage world of Bastion.
 
-## Example Section
+On the first page of this guide, we will introduce you to the various systems you can expect to master.  Some of these are still being researched as we speak, so there will be places where information is not available, even in this guide.  We will endeavor to never include incorrect or unverified information.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+## Damage Types
 
-## Some Formula
+Anthem has five main damage types, divided into three elemental damage types and two physical damage types.  The elemental damage types are Fire, Ice, and Shock.  The physical damage types are Impact and Acid.  One common misconception perpetuated by the game's tooltips is that Blast is a damage type.  Blast is instead a modifier, so some forms of damage can be affected by Blast damage modifiers as well as modifiers to the damage type itself.
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+## Calculating Damage
+
+The main formula for damage dealt in Anthem has been derived.  You can check out the formula [here](mechanics/damageFormula.md) or the original study [under Experiments](/docs/blog/2019/02/26/damageFormula).
+
+## Inscriptions
+
+Each item has up to four inscription slots, each with different possible inscriptions.
