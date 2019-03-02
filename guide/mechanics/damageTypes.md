@@ -6,7 +6,7 @@ sidebar_label: Damage Types
 
 Each damage source has up to four types, consisting of the Major damage type (Physical or Elemental), the Damage Subtype, the Major Item type, the Item subtype.  Specific bonus types may also apply.  Any inscriptions or effects which affect one of the damage source's types will apply to it. 
 
-The total damage multiplier for the damage source can then be found by adding all of the bonuses which affect it.  In this way, each of the damage source's types can be thought of as a "modifier slot":  When determining how damage multipliers will apply, just determine the modifiers for each slot, and add them together.
+The total damage multiplier for the damage source can then be found by adding all of the bonuses which affect it.  In this way, each of the damage source's types can be thought of as a "modifier slot":  When determining how damage modifiers will apply, just determine the modifiers for each slot, and add them together.
 
 ## Slots 1 and 2:  Major Damage Type and Damage Subtype
 
@@ -15,7 +15,7 @@ The Major damage types are Physical and Elemental.  Impact and Acid are Physical
 The Damage Subtypes are Impact, Acid, Electric, Fire, and Ice.  Bonuses to these apply in addition to the general elemental/physical bonus, as they are in separate "type slots"
 
 
-## Slots 3 and 4:  Major Item Type and Damage Subtype
+## Slots 3 and 4:  Major Item Type and Item Subtype
 
 The Major item Types are Weapons and Gear.
 

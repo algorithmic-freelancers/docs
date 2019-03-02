@@ -10,12 +10,12 @@ sidebar_label: Damage Formula
 
 Anthem's damage formula is as follows:
 
-```DAMAGE = (((Base * (1+A))*(B*(1+C))*D*E+1```
+```DAMAGE = (Base * (1+A)*B*(1+C)*D*E)+1```
 
 
 ### Parameters used
 
-**A:** Damage Modifiers. If you’re looking at a weapon with 75% weapon damage and no other modifiers, this number is 0.75. However, this should be the sum of every applicable damage modifier. Which modifiers apply to which skill/guns is not a topic for this document, although there will be some general guidelines at the end.
+**A:** Damage Modifiers. If you’re looking at a weapon with 75% weapon damage and no other modifiers, this number is 0.75. However, this should be the sum of every applicable damage modifier. Consult the [Damage Types](mechanics/damageTypes.md) guide for more information about how to calculate this.
 
 **B:** Crit Multiplier. For anything that cannot crit, this value is 1. For anything that can crit, this value depends on what it is. Every weapon and ability that can crit has a crit multiplier specific to the item. For Blastback, this value is 1.8. For Plasma Star, this value is 0.75. Please note that shielded enemies cannot be critically hit for damage purposes.
 
@@ -66,7 +66,7 @@ Our values for the formula are as follows:
 
 Plugging it in:
 ```
-DAMAGE = 238 * (1.18) * (0.5 * 1) * 0.75 * 1.33 + 1
+DAMAGE = 238 * (1.68) * (0.5 + 1) * 0.75 * 1.33 + 1
 DAMAGE = 599
 ```
 
