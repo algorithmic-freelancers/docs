@@ -10,7 +10,11 @@ On the first page of this guide, we will introduce you to the various systems yo
 
 ## Damage Types
 
-Anthem has five main damage types, divided into three elemental damage types and two physical damage types.  The elemental damage types are Fire, Ice, and Shock.  The physical damage types are Impact and Acid.  One common misconception perpetuated by the game's tooltips is that Blast is a damage type.  Blast is instead a modifier, so some forms of damage can be affected by Blast damage modifiers as well as modifiers to the damage type itself.
+Anthem has five main damage types, divided into three elemental damage types and two physical damage types.  The elemental damage types are Fire, Ice, and Shock.  The physical damage types are Impact and Acid.  
+
+One common misconception perpetuated by the game's tooltips is that Blast is a damage type.  Blast is instead a modifier, so some forms of damage can be affected by Blast damage modifiers as well as modifiers to the damage type itself.
+
+More about damage types can be found in the [Damage Types](mechanics/damageTypes.js) guide.
 
 ## Calculating Damage
 
