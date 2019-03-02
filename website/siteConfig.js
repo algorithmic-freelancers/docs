@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'mechanics/overview', label: 'Docs'},
+    {doc: 'mechanics/overview', label: 'Guide'},
     {doc: 'todo', label: 'Contributing'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Experiments'},
@@ -88,12 +88,19 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
+  //Internal Site URLs
+  customDocsPath: 'guide',
+
   // Open Graph and Twitter card images.
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  ogImage: 'img/favicon.png',
+  twitterImage: 'img/favicon.png',
 
   // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
+  enableUpdateBy: true,
+
+  // Twitter info
+  twitter: true,
+  twitterUsername: 'AlgorithmicThe',
 
   // Show documentation's last update time.
   // enableUpdateTime: true,
