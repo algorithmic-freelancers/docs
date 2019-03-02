@@ -114,13 +114,13 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Description = () => (
+    const Experiments = () => (
       <Block background="dark">
         {[
           {
             content:
               'Insert recruiting pitch here',
-            image: `${baseUrl}img/colossus.svg`,
+            image: `${baseUrl}img/flask.svg`,
             imageAlign: 'right',
             title: 'Experiments',
           },
@@ -128,14 +128,14 @@ class Index extends React.Component {
       </Block>
     );
 
-    const LearnHow = () => (
+    const Guide = () => (
       <Block background="light">
         {[
           {
             content: 'Say something about mechanics',
-            image: `${baseUrl}img/colossus.svg`,
+            image: `${baseUrl}img/book.svg`,
             imageAlign: 'right',
-            title: 'Mechanics',
+            title: 'Mechanics Guide',
           },
         ]}
       </Block>
@@ -195,9 +195,9 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           {/* <FeatureCallout /> */}
-          <LearnHow />
+          <Guide />
+          <Experiments />
           <TryOut />
-          <Description />
           <Showcase />
         </div>
       </div>
