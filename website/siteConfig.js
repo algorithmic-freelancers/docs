@@ -90,6 +90,7 @@ const siteConfig = {
 
   //Internal Site URLs
   customDocsPath: 'guide',
+  docsUrl: 'guide',
 
   // Open Graph and Twitter card images.
   ogImage: 'img/favicon.png',
