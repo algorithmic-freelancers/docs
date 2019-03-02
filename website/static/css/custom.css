@@ -18,3 +18,7 @@
 .homeSplashFade {
     background-image: url('/docs/img/Anthem_Texture_Topo_Grey.png');
 }
+
+.blockElement.imageAlignRight .blockContent, .blockElement.imageAlignLeft .blockContent {
+    text-align: left;
+}

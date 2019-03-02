@@ -102,10 +102,10 @@ class Index extends React.Component {
     );
 
     const TryOut = () => (
-      <Block id="theorycrafting">
+      <Block id="theorycrafting" background="dark">
         {[
           {
-            content: 'Say something about theory-crafting',
+            content: 'Join the conversation around how the world of Bastion works, and how best to equip your Javelin to survive.',
             image: `${baseUrl}img/colossus.svg`,
             imageAlign: 'left',
             title: 'Theorycrafting',
@@ -115,11 +115,11 @@ class Index extends React.Component {
     );
 
     const Experiments = () => (
-      <Block background="dark">
+      <Block>
         {[
           {
             content:
-              'Insert recruiting pitch here',
+              `We don't just tell you the numbers; you can see how we got them.  Check out how other Freelancers are studying the world around them, or publish your own findings.`,
             image: `${baseUrl}img/flask.svg`,
             imageAlign: 'right',
             title: 'Experiments',
@@ -132,7 +132,7 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Say something about mechanics',
+            content: `In Bastion, knowledge is the best weapon. Arm yourself with damage formula, inscription mechanics, type multipliers, and more.`,
             image: `${baseUrl}img/book.svg`,
             imageAlign: 'right',
             title: 'Mechanics Guide',
@@ -145,10 +145,10 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'Anthem, reverse-engineered',
-            image: `${baseUrl}img/colossus.svg`,
+            content: 'Anthem\'s mechanics de-mystified',
+            image: `${baseUrl}img/book.svg`,
             imageAlign: 'top',
-            title: 'Mechanics',
+            title: 'Guide',
           },
           {
             content: 'Optimize to your heart\'s content',
