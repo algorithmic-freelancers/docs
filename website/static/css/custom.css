@@ -15,10 +15,52 @@
 @media only screen and (min-width: 1500px) {
 }
 
-.homeSplashFade {
+h2.headerTitleWithLogo {
+    color: whitesmoke;
+}
+
+h2.projectTitle {
+    color: whitesmoke;
+}
+
+.homeSplashFade .button {
+    color: #ef553d;
+    border-color: #ef553d;
+}
+.homeSplashFade .button:hover {
+    background-color: #ef553d;
+    color: #20232a;
+}
+
+.promoSection .promoRow .pluginRowBlock > .buttonWrapper {
+    padding: 0 10px;
+}
+.homeSplashFade, .nav-footer {
+    background-color: #20232a;
+    position: relative;
+}
+
+.homeSplashFade > *, .nav-footer > * {
+    position: relative;
+}
+
+.homeSplashFade::before, .nav-footer::before {
+    content:'';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background-image: url('/docs/img/Anthem_Texture_Topo_Grey.png');
+    filter: invert(100%) brightness(0.75) sepia(60%) hue-rotate(180deg);
 }
 
 .blockElement.imageAlignRight .blockContent, .blockElement.imageAlignLeft .blockContent {
     text-align: left;
+}
+
+.nav-footer > .sitemap > .nav-home {
+    opacity: 1;
+    transition: none;
 }
