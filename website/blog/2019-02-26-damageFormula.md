@@ -1,6 +1,7 @@
 ---
 author: Cebarik
 title: Anthem's Damage Formula
+authorURL: http://www.reddit.com/u/-BWC-Zephyx
 ---
 
 ## Introduction

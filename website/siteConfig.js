@@ -44,7 +44,7 @@ const siteConfig = {
     {blog: true, label: 'Experiments'},
   ],
 
-  blogSidebarTitle: 'Recent Studies',
+  blogSidebarTitle: { default: 'Recent Studies', all: 'All Studies' },
 
   // If you have users set above, you add it here:
   // users,
