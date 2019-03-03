@@ -1,14 +1,13 @@
-This website was created with [Docusaurus](https://docusaurus.io/).
 
 # What's In This Document
 
-* [Get Started in 5 Minutes](#get-started-in-5-minutes)
+* [Get Started in 10 Minutes](#get-started-in-5-minutes)
 * [Directory Structure](#directory-structure)
 * [Editing Content](#editing-content)
 * [Adding Content](#adding-content)
 * [Full Documentation](#full-documentation)
 
-# Get Started in 5 Minutes
+# Get Started in 10 Minutes
 
 ## Set up your local dev environment
 
@@ -25,6 +24,7 @@ https://github.com/algorithmic-freelancers/docs.git
 ## Make sure all the dependencies for the website are installed
 
 Navigate to the /website folder in the repository.
+Open a command prompt using Shift+Right-click
 
 ```sh
 # Install dependencies
@@ -49,6 +49,9 @@ docs/
     doc-1.md
     doc-2.md
     doc-3.md
+    some-folder/
+      doc-4
+      doc-5
   website/
     blog/
       2016-3-11-oldest-post.md
