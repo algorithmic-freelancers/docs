@@ -10,7 +10,7 @@ sidebar_label: Damage Formula
 
 Anthem's damage formula is as follows:
 
-```DAMAGE = (Base * (1+A)*B*(1+C)*D*E)+1```
+```DAMAGE = Base * ((1+A)*B*(1+C)*D*E)+1```
 
 
 ### Parameters used
