@@ -44,10 +44,10 @@ Anthem's damage formula is as follows:
 ## Example
 
 **Weapon:**
-![alt-text](/docs/assets/damageFormulaWeapon.png)
+Level 38 Epic Anvil
 
 **Other Relevant Gear:**
-![alt-text](/docs/assets/damageFormulaGear.png)
+Viper's Bite with +18% Weapon Damage
 
 **Target:** Ursix
 
@@ -56,25 +56,27 @@ Anthem's damage formula is as follows:
 
 Our values for the formula are as follows:
 
-**Base:** 50 (from weapon card)
+**Base:** 687 (from weapon card)
 
 **A:** 0.68 (50% from weapon, 18% from the Viper’s Bite equipped in Case 1)
 
-**B:** 0.5
+**B:** 1.75
 
-**C:** 0 (I do not have additional critical modifiers on)
+**C:** 0.5
 
-**D:** 0.75 (Impact attacking armor)
+**D:** 0 (I do not have additional critical modifiers on)
 
-**E:** 1.33 (Target Beacon applied)
+**E:** 0.75 (Impact attacking armor)
+
+**F:** 0.33 (Target Beacon applied)
 
 Plugging it in:
 ```
-DAMAGE = 238 * (1.68) * (0.5 + 1) * 0.75 * 1.33 + 1
-DAMAGE = 599
+DAMAGE = 687 * (1 + 0.68) * (1.75) * * 0.5 * (1+0) * 0.75 * (1 + 0.33) + 1
+DAMAGE = 1008
 ```
 
-The weapon will deal 599 damage per shot to the target Ursix.
+The weapon will deal 1008 damage per shot to the target Ursix.
 
 ## Oddities and Exceptions
 Sometimes, the damage numbers seen will not match this document. Every ability is buffed by an array of modifiers, and perhaps not the ones you might expect. For example, acid damage is physical and not elemental.
