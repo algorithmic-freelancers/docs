@@ -14,11 +14,11 @@ It helps to break up the damage formula as follows
 
 where
 
-```NormalDamage = base *(1 +  SumDamageModifiers) * TypeModifier * (1 + DebuffModifiers)```
+```NormalDamage = TooltipDamage *(1 +  SumDamageModifiers) * TypeModifier * (1 + DebuffModifiers)```
 
 and
 
-```CriticalBonus = ItemCritBonus * WeakPointMultiplier * (1 + CritModifiers)```
+```CriticalBonus = ItemCritBonus * WeakPointResistanceMultiplier * (1 + CritModifiers)```
 
 
 
@@ -26,17 +26,17 @@ and
 
 **Base:** Card damage on the Weapon/Ability. For secondary damage sources this value is hidden.
 
-**SumDamageModifiers:** If you’re looking at a weapon with 75% weapon damage and no other modifiers, this number is 0.75. However, this should be the sum of every applicable damage modifier. Consult the [Damage Types](mechanics/damageTypes.md) guide for more information about how to calculate this.
+**SumDamageModifiers:** If you’re looking at a weapon with +75% weapon damage and no other modifiers, this number is 0.75. However, this should be the sum of every applicable damage modifier. Consult the [Damage Types](mechanics/damageTypes.md) guide for more information about how to calculate this.
 
-**TypeModifier:** This represents the damage bonus (or penalty) applied based on the damage type of your attack and the health type of the enemy. All attacks fall into one of 5 categories: Impact, Acid, Electric, Ice, or Fire. A table showing what the value of D should be is shown in the table below
+**TypeModifier:** This represents the damage bonus (or penalty) applied based on the damage type of your attack and the health type of the enemy. For example, if using lightning against a shielded enemy this value is 1.5. You can find a full table of TypeModifier values below. 
 
-**SumDebuffModifiers:** Sum of all debuffs applied to an enemy that cause them to take additional damage. Currently Acid, Interceptor's Target Beacon, and Colossus' Taunt. Beacon and Taunt do not stack with each other. Thus, the maximum value is 
+**SumDebuffModifiers:** Sum of all debuffs applied to an enemy that cause them to take additional damage. Currently Acid, Interceptor's Target Beacon, and Colossus' Taunt. Beacon and Taunt do not stack with each other. Thus, the maximum value is Acid (0.25) plus either Beacon or Taunt (0.33) for a total of 0.58
 
-**ItemCritBonus:** For anything that cannot crit, this value is 1. For anything that can crit, this value depends on the damage source. Every weapon and ability that can crit has a crit multiplier specific to the item. Blastback is 2.4, Plasma Star is 1.5. a full list of datamined values can be found on [AnthemArchive](http:AnthemArchive.com) Please note that shielded enemies cannot be critically hit for damage purposes.
+**ItemCritBonus:** For anything that can crit, this value depends on the damage source. Every weapon and ability that can crit has a crit multiplier specific to the item. Blastback is 2.4, Plasma Star is 1.5. a full list of datamined values can be found on [AnthemArchive](http:AnthemArchive.com) Please note that shielded enemies cannot be critically hit for damage purposes.
 
-**WeakPointMultiplier:** Target Crit Multiplier For anything that cannot crit, this value is 1. Each weakpoint on an enemy has it's on crit multiplier. For most enemies, this value is 0.5. Some enemies such as scars, outlaw shotgunners, and Ash Titan's have higher or lower values.
+**WeakPointResistanceMultiplier:**  Each weakpoint on an enemy has it's own crit multiplier. This value is typically <1. For most enemies, this value is 0.75. Some enemies such as scars, outlaw shotgunners, and Ash Titan's have higher or lower values.
 
-**CritModifiers:**  If your item cannot crit, this value is 0. If your item can crit, this value is the total of all applicable crit damage modifiers. If you have 10% on your primary gun (gear icon) and 50% on your secondary gun (gear icon), these values are 0.1 and 0.5, respectively. However, some slots other than weapons can roll javelin-wide (javelin icon) critical inscriptions. These inscriptions should be included.
+**CritModifiers:**  This value is the total of all applicable crit damage modifiers. If you have 10% on your primary gun (gear icon) and 50% on your secondary gun (gear icon), these values are 0.1 and 0.5, respectively. However, some slots other than weapons can roll javelin-wide (javelin icon) critical inscriptions. These inscriptions should be included.
 
 ### Damage Type Multipliers
 
@@ -82,8 +82,8 @@ Our values for the formula are as follows:
 
 Plugging it in:
 ```
-NormalDamage = 687 * (1 + 0.68)  * 0.75 * (1 + 0.33)
-CritBonus =  1.75 * 0.5 * (1 + 0.2)
+NormalDamage = 687 * (1 + 0.68)  * 0.75 * (1 + 0.33) = 1151
+CritBonus =  1.75 * 0.5 * (1 + 0.2) = 1.05
 DamageDealt = 1151 * (1 + 1.05) = 2360
 ```
 
